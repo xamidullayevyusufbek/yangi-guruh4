@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    margin: auto;
+}
+
+.header {
+    background-image: url(/pages/fon.png);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.hero {
+    padding: 120px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    margin-left: 100px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 140%;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.features {
+    padding: 60px 0;
+    /* background: #f9f9f9; */
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.features-grid { 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 250px;
+}
+
+.feature-item {
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid silver;
+    padding: 20px 30px;
+    border-radius: 8px;
+    min-width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
