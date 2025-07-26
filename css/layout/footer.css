@@ -1,0 +1,94 @@
+#contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background: #f9f9f9;
+}
+
+.contact-left {
+  margin-left: 100px;
+}
+.contact-page{
+    font-size: 30px;
+}
+.contact-right {
+  flex: 1;
+}
+.contact-description{
+    color: #2ecc71;
+    margin-top: 20px;
+}
+.contact-btn{
+    color: white;
+    background-color: #2ecc71;
+    width: 110px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-left: 350px;
+  width: 400px;
+}
+.label-info{
+    margin-right: 120px;
+}
+.sub-btn {
+  background: #2ecc71;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 400px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #27ae60;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.delivery .text {
+  flex: 1;
+}
+
+.delivery .map {
+  flex: 1;
+}
+
+.delivery img {
+  width: 100%;
+  height: auto;
+}
+.text-page{
+    font-size: 42px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.text-description{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+} 
