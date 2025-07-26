@@ -15,53 +15,65 @@ body {
 
 .header {
     background-image: url(/pages/fon.png);
+    width: 100%;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+.navbar-menus {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-nav a {
+.navbar-menu {
     text-decoration: none;
-    color: #000;
+    color: black;
     font-weight: 500;
 }
-.hero {
+.logo-btn{
+    display: none;
+}
+
+@media (max-width:770px) {
+    .navbar-menus{
+        display: none;
+    }
+    .logo-btn{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar-logo{
+        margin-left: 20px;
+    }
+}
+#hero {
     padding: 120px 0;
-    position: relative;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-}
 
-.hero-content {
-    position: relative;
+.hero-infos {
     max-width: 600px;
-    margin-left: 100px;
-    z-index: 2;
+    margin-left: 200px;
 }
 
-.hero h1 {
+.hero-page {
     font-size: 42px;
     margin-bottom: 20px;
     color: white;
+    padding-right: -100px;
 }
 
-.hero p {
+.hero-description {
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 140%;
     color: white;
+    padding-left: 100px;
 }
 
 .btn {
@@ -73,10 +85,17 @@ nav a {
     border-radius: 5px;
     font-weight: bold;
 }
-
+@media (max-width:400px) {
+    .hero-page{
+        font-size: 30px;
+        margin-right: 100px;
+    }
+    .hero-description{
+        margin-right: 50px;
+    }
+}
 .features {
     padding: 60px 0;
-    /* background: #f9f9f9; */
     text-align: center;
 }
 
@@ -85,7 +104,7 @@ nav a {
     margin-bottom: 30px;
 }
 
-.features-grid { 
+.features-grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     flex-wrap: wrap;
@@ -102,4 +121,11 @@ nav a {
     border-radius: 8px;
     min-width: 220px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+@media (max-width:400px) {
+    .features-grid{
+        display: grid;
+        grid-template-columns: auto ;
+        margin-right: 200px;
+    }
 }

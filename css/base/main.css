@@ -16,7 +16,12 @@
     flex-wrap: wrap;
     margin-left: 100px;
 }
-
+@media (max-width:400px) {
+    .material-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
 .card {
     position: relative;
     overflow: hidden;
@@ -61,6 +66,7 @@
 .about-text {
     flex: 2;
     max-width: 600px;
+    margin-left: 100px;
 }
 
 .about-text h3 {
@@ -75,18 +81,18 @@
 }
 
 .about-stats {
-    /* flex: 1; */
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
     background: #eee6e6;
     padding: 30px;
     border-radius: 12px;
-    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .stat h2 {
     font-size: 36px;
     color: #111;
+    margin-right: 120px;
 }
 
 .stat span {
@@ -99,4 +105,13 @@
     font-size: 14px;
     color: #555;
     text-align: center;
+}
+@media (max-width:400px) {
+    .about-stats{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .about-text{
+        margin-right: 20px;
+    }
 }
